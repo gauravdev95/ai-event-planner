@@ -55,7 +55,7 @@ AI:
 
 ## API
 
-POST `/api/generate-event`
+POST `/api/events`
 
 Request:
 ```json
@@ -82,21 +82,21 @@ Response:
 Clone repo:
 
 ```bash
-git clone https://github.com/your-username/ai-event-concierge.git
-cd ai-event-concierge
+git clone https://github.com/gauravdev95/ai-event-planner.git
+cd ai-event-planner
 ```
 
-### backend
+### server
 
 ```bash
-cd backend
+cd server
 npm install
 ```
 
 create `.env`:
 
 ```env
-MONGO_URI=your_mongo_uri
+MONGO_URL=your_mongo_uri
 GEMINI_API_KEY=your_key
 PORT=5000
 ```
@@ -107,10 +107,10 @@ run:
 npm start
 ```
 
-### frontend
+### client
 
 ```bash
-cd frontend
+cd client
 npm install
 npm run dev
 ```
